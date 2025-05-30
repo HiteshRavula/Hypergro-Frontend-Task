@@ -7,7 +7,7 @@ export default {
     v3_singleFetch: true,
     v3_throwAbortReason: true,
   },
-  serverBuildTarget: "vercel",
-  server: "./server.js",
-  ignoredRouteFiles: ["**/.*"],
+  serverBuildTarget: "node", // Not "vercel"
+  server: "./server.js",     // Use your custom Express server
+  ignoredRouteFiles: ["**/.*"]
 };
